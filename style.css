@@ -1,0 +1,510 @@
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background-image: url(imagenes/navbgm.jpg);
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+}
+
+/*Para cambiar los colores de las líneas del ícono*/
+.navbar-light .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ 
+}
+
+.navbar-light .navbar-toggler{
+  border: 1px solid #FFFBF0;
+  background-color: #FFFBF0;
+}
+
+
+.navbar a{
+  color: gray;
+  padding: 5px;
+  margin: 3px;
+  background-color: #FFFBF0 ;
+  border-radius: 15px;
+  font-size: 18px;
+  
+}
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Cormorant', serif;
+}
+
+
+.seccion-oscura {
+  color: black;
+  background-color: #fbdb54;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: #fb9fbe;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Cormorant', sans-serif;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #020000b3;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.btn-info{
+  font-size: 1.1rem;
+  font-family: 'Didact Gothic', sans-serif;
+  margin: 20px;
+  background-color: #fbdb54;
+  border: 1px dashed #FFFBF0;
+  color: black;
+}
+
+
+.btn-info:hover{
+  background-color: #0da0b9;
+  border: 1px dashed #FFFBF0;
+  color: #fbfbf4;
+}
+
+
+/* Seccion Hero */
+
+.hero {
+  background-color: #fbfbf4  ;
+  min-height: 450px;
+  text-align: center;
+}
+
+
+.hero-principal {
+  padding: 3rem;
+}
+
+/*Circular text*/
+.hero svg text{
+  font-family: 'Cormorant',serif ;
+  font-size: 1.2rem;
+}
+
+
+.hero-imagen-desarrollador {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+/*Círculo en la imagen*/
+.hero-imagen-desarrollador{
+  padding: 8px;
+  background: linear-gradient(90deg, rgba(254,128,17,1) 0%, rgba(254,221,80,1) 11%, rgba(18,141,164,1) 80%, rgba(255,152,177,1) 100%);
+}
+
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+/*Cambiar el color del efecto máquina de escribir*/
+.text-primary .Typewriter__wrapper{
+  color: #0a0a23;
+}
+
+/*Cambiar el color del cursor*/
+.text-primary .Typewriter__cursor{
+  color: #FF99AF;
+}
+
+
+/*Imágen debajo del nombre*/
+.hero-inferior img{
+  margin-bottom: 10px;
+}
+
+/* Sobre mi */
+
+.sobre-mi {
+  padding:10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+.sobre-mi .columna-sobremi{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre-mi .columna-sobremi p {
+  border: 1px dashed #FFDE51;
+  padding: 18px;
+  border-radius: 15px;
+  background-color: #FFFBF1;
+}
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 38px 60px 38px;
+}
+
+
+.experiencia .columna {
+  font-family: 'Didact Gothic', serif;
+  padding: 20px;
+  border: 2px dashed #6EBDC3;
+  border-radius: 15px;
+  background-color: #6EBDC3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: #0da0b9;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #FF99AF;
+  background-color: #FFFBF0;
+  padding: 8px 19px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover i{
+  color: #fb9fbe;
+  background-color: #0a0a23;
+}
+
+
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+/* Proyectos */
+
+.proyectos-recientes {
+  padding: 40px;
+  background-color: #FFFBF0;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #0da0b9;
+  margin-bottom: 0;
+}
+
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: #FF99AF;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+
+/* Otros */
+
+.otros{
+  padding: 40px 40px 80px 40px;
+}
+
+.otros .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.otro-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.otro-texto {
+  max-width: 70%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: center;
+  border-radius: 15px;
+  color: #0a0a23;
+  border: 1px dashed #FF99AF;
+  background-color: #fbfbf4;
+
+  
+}
+
+.otro-info {
+  padding: 10px;
+  font-weight: bold;
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px dashed #FF99AF;
+  background-color: #fbfbf4;
+
+  
+}
+
+.otro-info p {
+  margin-bottom: 0;
+}
+
+
+
+.otro-info .cargo {
+  font-size: 0.9rem;
+  color: #343633;
+}
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.seccion-titulo-contacto{
+  font-size: 2rem;
+  padding: 15px 0;
+  color: #fbfbf4;
+  font-family: 'Didact Gothic', sans-serif;
+  border: 2px dashed #fbfbf4;
+  background-color: #0da0b9;
+  border-radius: 15px;
+
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: #6EBDC3;
+  border-radius: 30px;
+  border: 2px dashed #0da0b9;
+  box-shadow: 4px 4px 4px 4px #0da0b9;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: #fbfbf4;
+  font-size: 1.2rem;
+  font-family: 'Didact Gothic', sans-serif;
+ 
+}
+
+.contacto button {
+  color: #fbfbf4;
+  font-weight: bold;
+  font-family: 'Didact Gothic', sans-serif;
+  background-color: #0da0b9;
+  border: 2px dashed #fbfbf4;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+  border: 2px dashed #6EBDC3;
+}
+
+.contacto button i {
+  color: #fbfbf4;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Cormorant', serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid #fb9fbe;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: #FF99AF;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #343633;
+  padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .otro-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .otro-texto {
+    font-size: 18px;
+  }
+}
